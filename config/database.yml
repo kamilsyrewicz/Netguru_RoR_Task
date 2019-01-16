@@ -26,5 +26,10 @@ test:
   database: db/test.sqlite3
 
 production:
-  <<: *default
-  database: db/production.sqlite3
+  adapter: mysql2
+  encoding: utf8
+  host: eu-cdbr-west-02.cleardb.net
+  database: heroku_b4940550c583faa
+  pool: 5
+  username: b519f7a4b74df5
+  password: 8cdec587
