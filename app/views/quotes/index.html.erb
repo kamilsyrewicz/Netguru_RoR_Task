@@ -1,0 +1,21 @@
+<div class="container">
+
+  <a href="/create" class="btn btn-primary float-right my-3">Add quote</a>
+
+  <table class="table table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th width="75%">Quote:</th>
+        <th width="25%">Added on</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @quotes.each do |quote| %>
+        <tr>
+          <td><%= quote[:body] =%></td>
+          <td><%= quote[:created_at] =%></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
